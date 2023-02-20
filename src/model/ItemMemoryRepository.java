@@ -3,23 +3,19 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemMemoryRepository implements ItemRepository {
+public class ItemMemoryRepository extends AbstractItemRepository {
 
-  private static List<Item> items = createItems();
+  private final List<Item> items = createItems();
 
-  @Override
-  public List<Item> findByFilter(String find) {
-    String findLc = find.toLowerCase();
-    List<Item> result = new ArrayList<>();
-    for (Item item : items) {
-      if (item.getQuestion().toLowerCase().contains(findLc)) {
-        result.add(item);
-      }
-    }
-    return result;
+  public ItemMemoryRepository() {
   }
 
-  private static List<Item> createItems() {
+  @Override
+  protected List<Item> getItems() {
+    return items;
+  }
+
+  private List<Item> createItems() {
     List<Item> items = new ArrayList<>();
     items.add(new Item("Кот?", "Да"));
     items.add(new Item("Алексей", "Филипп"));
