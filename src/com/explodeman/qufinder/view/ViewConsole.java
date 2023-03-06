@@ -1,16 +1,16 @@
-package view;
+package com.explodeman.qufinder.view;
 
 import java.util.Scanner;
 
 public class ViewConsole implements View {
 
-  @Override
+
   public String input() {
     Scanner sc = new Scanner(System.in);
     return sc.next();
   }
 
-  @Override
+
   public void output(String message) {
     System.out.println(message);
   }

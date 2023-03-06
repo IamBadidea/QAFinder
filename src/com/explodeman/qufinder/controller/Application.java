@@ -1,9 +1,10 @@
-package controller;
+package com.explodeman.qufinder.controller;
+
+import com.explodeman.qufinder.model.Item;
+import com.explodeman.qufinder.model.item_repository.ItemRepository;
+import com.explodeman.qufinder.view.View;
 
 import java.util.List;
-import model.Item;
-import model.ItemRepository;
-import view.View;
 
 public class Application {
 

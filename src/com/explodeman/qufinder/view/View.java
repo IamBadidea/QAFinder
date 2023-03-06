@@ -1,4 +1,4 @@
-package view;
+package com.explodeman.qufinder.view;
 
 public interface View {
 

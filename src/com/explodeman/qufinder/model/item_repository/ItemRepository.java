@@ -1,4 +1,6 @@
-package model;
+package com.explodeman.qufinder.model.item_repository;
+
+import com.explodeman.qufinder.model.Item;
 
 import java.util.List;
 

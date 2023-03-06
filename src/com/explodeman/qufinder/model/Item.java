@@ -1,4 +1,4 @@
-package model;
+package com.explodeman.qufinder.model;
 
 public class Item {
   private String question;

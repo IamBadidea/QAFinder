@@ -1,10 +1,12 @@
-package model;
+package com.explodeman.qufinder.model.item_repository;
+
+
+import com.explodeman.qufinder.model.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractItemRepository implements ItemRepository{
-
 
   public AbstractItemRepository() {
   }

@@ -1,4 +1,7 @@
-package model;
+package com.explodeman.qufinder.model.item_repository.item_memory_repository;
+
+import com.explodeman.qufinder.model.Item;
+import com.explodeman.qufinder.model.item_repository.AbstractItemRepository;
 
 import java.util.ArrayList;
 import java.util.List;
